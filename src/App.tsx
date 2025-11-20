@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { 
   Box, 
   Container, 
@@ -14,7 +14,6 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions,
   Tabs,
   Tab,
   IconButton,
@@ -451,7 +450,7 @@ export default function App() {
                   </Typography>
                   {selectedTool.env ? (
                     <Stack spacing={1.5}>
-                      {Object.entries(selectedTool.env).map(([key, val]) => (
+                      {Object.entries(selectedTool.env).map(([key]) => (
                         <Box key={key} sx={{ bgcolor: '#000', p: 2, borderRadius: 2, border: '1px solid #222', fontFamily: 'monospace', fontSize: '0.85rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                           <Box>
                              <span style={{color: '#ff79c6'}}>{key}</span>
