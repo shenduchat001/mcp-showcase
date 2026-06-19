@@ -721,6 +721,17 @@ export const MCP_DATA: MCPTool[] = [
     args: ['-y', 'mcp-server-twitter'],
     homepage: 'https://github.com/twitter/mcp-server-twitter'
   },
+  {
+    id: 'xquik',
+    name: 'Xquik',
+    category: 'Social',
+    description: 'Search X posts, profiles, trends, and exports through Xquik.',
+    vendor: 'Community',
+    command: 'npx',
+    args: ['-y', 'mcp-remote@0.1.38', 'https://xquik.com/mcp', '--header', 'x-api-key:${XQUIK_API_KEY}'],
+    env: { 'XQUIK_API_KEY': '...' },
+    homepage: 'https://docs.xquik.com/mcp/overview'
+  },
   { 
     id: 'discord', 
     name: 'Discord', 
