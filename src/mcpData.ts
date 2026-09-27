@@ -585,6 +585,16 @@ export const MCP_DATA: MCPTool[] = [
     args: ['-y', 'mcp-server-zapier'],
     homepage: 'https://github.com/zapier/mcp-server-zapier'
   },
+  {
+    id: 'statsnet',
+    name: 'Statsnet',
+    category: 'SaaS',
+    description: 'Background check any company in the world: registration, executives, courts and finances.',
+    vendor: 'Community',
+    command: 'npx',
+    args: ['-y', 'mcp-remote', 'https://statsnet.co/mcp'],
+    homepage: 'https://github.com/usenetstate/statsnet-mcp'
+  },
   { 
     id: 'stripe', 
     name: 'Stripe', 
